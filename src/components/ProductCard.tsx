@@ -39,12 +39,9 @@ export default function ProductCard({ product }: ProductCardProps) {
         </p>
 
         {/* Price */}
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-center mb-4">
           <span className="text-lg sm:text-xl font-bold text-gray-900">
-            ₦{product.price.toLocaleString()}
-          </span>
-          <span className="text-[10px] sm:text-xs text-gray-400 line-through">
-            ₦{(product.price * 1.3).toLocaleString()}
+            {product.price}
           </span>
         </div>
 
